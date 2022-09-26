@@ -4,12 +4,15 @@ import "./App.css";
 import React, { FC } from "react";
 
 import Layouts from "./components/layout";
+import Wrap from "./components/wrap";
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <Layouts title="aaa" />
-    </div>
+    <Wrap>
+      <div className="App">
+        <Layouts title="aaa" />
+      </div>
+    </Wrap>
   );
 };
 
